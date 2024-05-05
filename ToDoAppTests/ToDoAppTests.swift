@@ -23,18 +23,18 @@ final class ToDoAppTests: XCTestCase {
         // Given
         let sut = createSUT()
         let note = Note(title: "test", description: "test desc", id: UUID())
-        sut.newNote = note
+        sut.activeNote = note
         // When
         await sut.addNew(note: note)
         // Then
-        XCTAssertEqual(sut.notes.last?.title, note.title)
+        XCTAssertEqual(sut.allNotes.last?.title, note.title)
     }
     
     func test_create_new_note_should_fail_with_empty_description() async {
         // Given
         let sut = createSUT()
         let note = Note(title: "test", description: "", id: UUID())
-        sut.newNote = note
+        sut.activeNote = note
         // When
         await sut.addNew(note: note)
         // Then
@@ -48,10 +48,6 @@ final class ToDoAppTests: XCTestCase {
         )
     }
 }
-
-
-
-
 
 struct AddNoteUseCaseTest: AddNoteUseCase {
     func addNote(note: Note) async throws {

@@ -17,6 +17,8 @@
 		8F47ABAE2B9CFA9E003E941A /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F47ABAD2B9CFA9E003E941A /* Note.swift */; };
 		8F47ABB02B9E4AAC003E941A /* NotesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F47ABAF2B9E4AAC003E941A /* NotesUseCase.swift */; };
 		8F47ABB22B9F64B1003E941A /* AddNewNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F47ABB12B9F64B1003E941A /* AddNewNoteView.swift */; };
+		8F6B42D42BE7EFEF0059B791 /* PositionObservingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B42D32BE7EFEF0059B791 /* PositionObservingView.swift */; };
+		8F6B42D62BE7F00A0059B791 /* OffsetObservingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B42D52BE7F00A0059B791 /* OffsetObservingScrollView.swift */; };
 		8FD6A5582BAB17A200D347DB /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD6A5572BAB17A200D347DB /* Errors.swift */; };
 		8FD6A55A2BAB17DC00D347DB /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD6A5592BAB17DC00D347DB /* NoteViewModel.swift */; };
 		8FD6A55C2BAB581F00D347DB /* NotesUseCase+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD6A55B2BAB581F00D347DB /* NotesUseCase+UserDefaults.swift */; };
@@ -54,6 +56,8 @@
 		8F47ABAD2B9CFA9E003E941A /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		8F47ABAF2B9E4AAC003E941A /* NotesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesUseCase.swift; sourceTree = "<group>"; };
 		8F47ABB12B9F64B1003E941A /* AddNewNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewNoteView.swift; sourceTree = "<group>"; };
+		8F6B42D32BE7EFEF0059B791 /* PositionObservingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionObservingView.swift; sourceTree = "<group>"; };
+		8F6B42D52BE7F00A0059B791 /* OffsetObservingScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetObservingScrollView.swift; sourceTree = "<group>"; };
 		8FD6A5572BAB17A200D347DB /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		8FD6A5592BAB17DC00D347DB /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		8FD6A55B2BAB581F00D347DB /* NotesUseCase+UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotesUseCase+UserDefaults.swift"; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 		8F47AB7F2B9CF2C8003E941A /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
+				8F6B42D22BE7EFCD0059B791 /* UtilitiesViews */,
 				8FD6A55D2BAB5CDD00D347DB /* NoteUseCase */,
 				8F47AB802B9CF2C8003E941A /* ToDoAppApp.swift */,
 				8F47AB822B9CF2C8003E941A /* ContentView.swift */,
@@ -144,6 +149,15 @@
 				8F47AB9E2B9CF2CA003E941A /* ToDoAppUITestsLaunchTests.swift */,
 			);
 			path = ToDoAppUITests;
+			sourceTree = "<group>";
+		};
+		8F6B42D22BE7EFCD0059B791 /* UtilitiesViews */ = {
+			isa = PBXGroup;
+			children = (
+				8F6B42D32BE7EFEF0059B791 /* PositionObservingView.swift */,
+				8F6B42D52BE7F00A0059B791 /* OffsetObservingScrollView.swift */,
+			);
+			path = UtilitiesViews;
 			sourceTree = "<group>";
 		};
 		8FD6A55D2BAB5CDD00D347DB /* NoteUseCase */ = {
@@ -287,9 +301,11 @@
 			files = (
 				8FD6A55A2BAB17DC00D347DB /* NoteViewModel.swift in Sources */,
 				8F47ABB02B9E4AAC003E941A /* NotesUseCase.swift in Sources */,
+				8F6B42D42BE7EFEF0059B791 /* PositionObservingView.swift in Sources */,
 				8F47AB832B9CF2C8003E941A /* ContentView.swift in Sources */,
 				8F47AB812B9CF2C8003E941A /* ToDoAppApp.swift in Sources */,
 				8F47ABB22B9F64B1003E941A /* AddNewNoteView.swift in Sources */,
+				8F6B42D62BE7F00A0059B791 /* OffsetObservingScrollView.swift in Sources */,
 				8FD6A5582BAB17A200D347DB /* Errors.swift in Sources */,
 				8FD6A55C2BAB581F00D347DB /* NotesUseCase+UserDefaults.swift in Sources */,
 				8F47ABAE2B9CFA9E003E941A /* Note.swift in Sources */,
